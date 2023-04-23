@@ -38,11 +38,11 @@ body {
     box-shadow: 0.125rem 0.125rem 0.3125rem rgb(61, 28, 24);
     position: fixed;
     right: 1.5rem;
-    bottom: 1.5rem;
+    bottom: 3rem;
     transition: background 0.25s;
     cursor: pointer;
     outline: black;
-    border:none;
+    border: none;
 }
 
 .floating-btn:active {
@@ -180,7 +180,7 @@ header {
     border-radius: 1.5rem;
 }
 
-.aow{
+.aow {
     width: 100%;
     height: 80vh;
     background-color: pink;
@@ -189,19 +189,71 @@ header {
     justify-content: center;
 }
 
-.contacts{
+.aow h1 {
+    color: red;
+}
+
+.aow p {
+    color: blue;
+}
+
+.contacts {
     width: 100%;
     height: 80vh;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin-top: 2rem;
-    display: flex;
+    display: grid;
     justify-content: center;
+    text-align: center;
+}
+
+.contacts h1 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contacts p1 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 1.5rem;
+}
+
+.insta {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.contacts p3 {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1.5rem;
+}
+
+.contacts img {
+    padding-top: 3rem;
+    grid-column: 2;
+    grid-row: 3;
+    height: 35rem;
+    border-radius: 50%;
+}
+
+.contacts p2 {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 1.5rem;
+}
+
+.face {
+    grid-column: 3;
+    grid-row: 3;
 }
 
 footer {
     width: 100%;
     height: 5vh;
-    position: relative;
+    position: fixed;
     bottom: 0;
     background: rgb(244, 241, 236);
     display: inline-flex;
@@ -209,7 +261,10 @@ footer {
 }
 
 .foot {
+    grid-column: 1;
+    grid-row: 4;
     margin-left: 0.75rem;
+    padding-bottom: 5rem;
     text-align: left;
     font-size: 0.6rem;
 }
@@ -221,6 +276,6 @@ footer svg {
     transition: all 0.3s ease 0s;
 }
 
-.footer svg:hover{
+.footer svg:hover {
     width: 3rem;
 }
