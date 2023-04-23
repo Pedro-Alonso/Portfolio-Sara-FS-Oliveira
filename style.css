@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* html{
+    font-size: 62.5%;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgb(244, 241, 236) 0%,
+            white 100%);
+}
+
+.floating-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: #b14f44;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(244, 241, 236);
+    font-size: 2.5rem;
+    box-shadow: 0.125rem 0.125rem 0.3125rem rgb(61, 28, 24);
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    transition: background 0.25s;
+    cursor: pointer;
+    outline: black;
+    border:none;
+}
+
+.floating-btn:active {
+    background-color: #5f2720;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0.5rem;
+    margin-top: 0rem;
+    font-size: 1rem;
+    background: rgb(244, 241, 236);
+}
+
+.logosara {
+    height: 5rem;
+    cursor: pointer;
+
+}
+
+.welcome {
+    margin-left: -7rem;
+    font-size: 1.3rem;
+}
+
+.menus {
+    list-style: none;
+}
+
+.menus li {
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 0rem 1.3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.menus li a {
+    color: #b14f44;
+    text-decoration: none;
+    transition: all 0.3s ease 0;
+}
+
+.menus li a:hover {
+    color: rgb(61, 28, 24);
+}
+
+.home {
+    height: 87vh;
+    display: flex;
+    justify-content: right;
+
+}
+
+.portrait1 {
+    justify-self: right;
+    margin-right: 0.5rem;
+    animation: fade-up 0.4s;
+    animation: fade-down 0.4s;
+}
+
+.text {
+    padding-top: 2rem;
+    justify-self: left;
+    text-align: left;
+    margin-right: 9rem;
+    margin-left: 1.5rem;
+    font-size: 10vh;
+    font-weight: bolder;
+    animation: fade-up 0.8s;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.8rem) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(1.8rem) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem) scale(1);
+    }
+}
+
+.about {
+    margin-top: 2rem;
+    height: 80vh;
+    display: flex;
+    justify-content: left;
+}
+
+.portrait2 {
+    margin-left: 0.5rem;
+}
+
+.about h3 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    padding-right: -5rem;
+    height: 6rem;
+
+}
+
+.quem {
+    margin-left: 9rem;
+}
+
+.description {
+    text-align: center;
+    padding: 2rem 0rem;
+    margin: 14rem 2rem 8rem -33rem;
+    font-size: 1.5rem;
+    background-color: rgba(61, 28, 24, .05);
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.aow{
+    width: 100%;
+    height: 80vh;
+    background-color: pink;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts{
+    width: 100%;
+    height: 80vh;
+    background-color: yellow;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
+    position: relative;
+    bottom: 0;
+    background: rgb(244, 241, 236);
+    display: inline-flex;
+    justify-content: right;
+}
+
+.foot {
+    margin-left: 0.75rem;
+    text-align: left;
+    font-size: 0.6rem;
+}
+
+footer svg {
+    margin: 0rem 1rem;
+    width: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.footer svg:hover{
+    width: 3rem;
+}
